@@ -6,7 +6,7 @@
 #include "resource_ids.auto.h"
 
 #define MY_UUID { 0xE2, 0x09, 0x22, 0xBE, 0x25, 0xBB, 0x47, 0xDA, 0x88, 0xA6, 0x33, 0x7C, 0x4D, 0x70, 0x64, 0x74 }
-PBL_APP_INFO(MY_UUID, "Roboto Big Bold", "Tom Svoboda", 1, 0, RESOURCE_ID_IMAGE_MENU_ICON, APP_INFO_WATCH_FACE);
+PBL_APP_INFO(MY_UUID, "Roboto Big Bold", "Tom Svoboda", 2, 0, RESOURCE_ID_IMAGE_MENU_ICON, APP_INFO_WATCH_FACE);
 
 
 
@@ -179,7 +179,7 @@ void handle_init(AppContextRef ctx) {
 
   window_init(&window, "RobotoBig watch");
   window_stack_push(&window, true);
-  window_set_background_color(&window, GColorBlack);
+  window_set_background_color(&window, BACK_COLOR);
 	
   seconds_init();
 	
